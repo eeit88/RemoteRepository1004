@@ -9,6 +9,20 @@
     <param-name>contextConfigLocation</param-name>
     <param-value>model.settings.SpringJavaConfiguration</param-value>
   </context-param>
+  
+  
+  <servlet>
+        <servlet-name>helloworld</servlet-name>
+        <servlet-class>test.twst01</servlet-class>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloworld</servlet-name>
+        <url-pattern>/twst</url-pattern>
+   
+   
+
+    </servlet-mapping>
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
