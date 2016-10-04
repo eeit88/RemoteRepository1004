@@ -5,6 +5,15 @@
     <param-name>contextClass</param-name>
     <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
   </context-param>
+  
+  <servlet>
+     <servlet-name>uu</servlet-name>
+     <servlet-class>haha.us</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>uu</servlet-name>
+      <url-pattern>ii/testing</url-pattern>
+  </servlet-mapping>
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>model.settings.SpringJavaConfiguration</param-value>
