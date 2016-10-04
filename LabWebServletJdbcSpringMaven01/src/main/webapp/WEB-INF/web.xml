@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
   <display-name>LabWebServletJdbcSpringMaven01</display-name>
+
   <context-param>
     <param-name>contextClass</param-name>
     <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
@@ -14,6 +15,41 @@
       <servlet-name>uu</servlet-name>
       <url-pattern>ii/testing</url-pattern>
   </servlet-mapping>
+
+  <context-param>
+    <param-name>contextClass</param-name>
+    <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+  </context-param>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>model.settings.SpringJavaConfiguration</param-value>
+  </context-param>
+  
+  
+  <servlet>
+        <servlet-name>helloworld</servlet-name>
+        <servlet-class>test.twst01</servlet-class>
+        
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>helloworld</servlet-name>
+        <url-pattern>/twst</url-pattern>
+    </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>Test20161004_liamliu</servlet-name>
+ 	<servlet-class>test.Test20161004_liamliu</servlet-class> 
+  </servlet>
+ <servlet-mapping>
+ 	<servlet-name>Test20161004_liamliu</servlet-name>
+ 	<url-pattern>/testme.view</url-pattern>
+ </servlet-mapping>
+  
+  <context-param>
+    <param-name>contextClass</param-name>
+    <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+  </context-param>
+
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>model.settings.SpringJavaConfiguration</param-value>
