@@ -27,6 +27,7 @@ public class Demo2Servlet extends HttpServlet {
         out.println("<body>");
         out.println("<h1> Hello! World! Demo2</h1>");
         out.println("<h2> Test Update Demo2</h2>");
+        out.println("<h3> Test2 Update2 Demo2</h3>");
         out.println("</body>");
         out.println("</html>");
         out.close();
